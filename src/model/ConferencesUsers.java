@@ -12,9 +12,6 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.sun.istack.internal.Nullable;
-
-
 /**
  * This class is an entity class that represents the connection between conferences and their participants in 
  * in the database (i.e. which user is associated to which conference).
@@ -81,7 +78,6 @@ public class ConferencesUsers implements Serializable{
 		this.userRole = userRole;
 	}
 
-	@Nullable
 	@Basic
 	@Column(columnDefinition = "BIT", length = 1)
 	public boolean isNotifiedByMail() {
@@ -99,7 +95,6 @@ public class ConferencesUsers implements Serializable{
 		return this;
 	}
 	
-	@Nullable
 	public String getUniqueIdForEmailNotification() {
 		return uniqueIdForEmailNotification;
 	}

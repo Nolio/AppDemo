@@ -1,4 +1,9 @@
 <%@page import="helpers.*"%>
+<%@page import="java.io.FileInputStream"%>
+<%@page import="java.util.Properties"%>
+<%@page import="java.io.IOException"%>
+
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -71,9 +76,23 @@ getServletContext().setAttribute("retUrl", request.getRequestURL().toString());
 	</div>
 	<div class="main_text_footerimg"></div>
 	</div>	
+	
+	<%
+	Properties properties = new Properties();
+	String version = "Cannot determine version";
+	try {
+
+		properties.load(getServletContext().getResourceAsStream("/WEB-INF/conf/conf.properties"));
+		version = properties.getProperty("version");
+
+	} catch (Exception e) {
+		version = e.getMessage();
+	}
+	
+	%>
 	<div id="pagefooter">
-		<div style="float:right">
-		&copy; 2011 Conf4U all rights reserved to Alon Pisnoy, Elad Ephrat and Nofar Bluestein
+		<div style="float:right;font-size:14px">
+		&copy; Conf4U Version <%=version%>
 		</div>
 		</div>
 	</div>

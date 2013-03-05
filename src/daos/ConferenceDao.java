@@ -146,6 +146,7 @@ public class ConferenceDao {
 		return conf;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Conference> getActiveConferencesByLocation(Location location) {
 		
 		List<Conference> conferences = null;
