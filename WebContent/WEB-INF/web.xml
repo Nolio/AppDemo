@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" metadata-complete="true" version="3.0">
-  <display-name>conf4u</display-name>
+  <display-name>FinancialApp</display-name>
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
@@ -44,7 +44,7 @@
     <servlet-name>LocationServlet</servlet-name>
     <url-pattern>/LocationServlet</url-pattern>
   </servlet-mapping>
-   <servlet>
+  <servlet>
     <servlet-name>ReportsServlet</servlet-name>
     <servlet-class>servlets.ReportsServlet</servlet-class>
   </servlet>

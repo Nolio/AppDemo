@@ -92,7 +92,7 @@ getServletContext().setAttribute("retUrl", request.getRequestURL().toString());
 	%>
 	<div id="pagefooter">
 		<div style="float:right;font-size:14px">
-		&copy; Conf4U Version <%=version%>
+		&copy; Financial Application Version <%=version%>
 		</div>
 		</div>
 	</div>
