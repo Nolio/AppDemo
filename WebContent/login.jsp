@@ -9,7 +9,7 @@
 <html>
 <head>
 <%= UiHelpers.GetAllJsAndCss().toString() %>
-<title>Conf4U</title>
+<title>Financial Application</title>
 <link type="text/css" href="css/login.css" rel="stylesheet" />
 <link href="css/login-box.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
@@ -33,11 +33,6 @@ div.error {
 getServletContext().setAttribute("retUrl", request.getRequestURL().toString());
 %>
 <div id="pagewrap">
-	<div id="pageheader">
-		<div id="logo">
-			<img width="97" height="56" border="0" alt="Conf4U" src="/conf4u/resources/imgs/conf4u_logo.png">
-		</div>
-	</div>
 	<div id="page_whitewrap">
 	<div id="pagecontent">
 	<div class="main_text_wrap">
@@ -48,7 +43,7 @@ getServletContext().setAttribute("retUrl", request.getRequestURL().toString());
 		<div class="fakeBoarder"></div>
 		<div id="login-box">
 		<H2>Login</H2>
-		Access to conference management.
+		Access to financial application.
 		<br />
 		<br />
 		<div class="newLoginform" style="margin-bottom: 5px;">
